@@ -213,3 +213,23 @@ stored procedures and triggers in mysql..?
 features of AWS
 
 Write a program to find 3rd largest number 
+
+JavaScript var keyword
+The var is the oldest keyword to declare a variable in JavaScript. It has the Global scoped or function scoped. This means:
+If you create a variable outside of a function, you can use it anywhere in your code.
+If you create a variable inside a function, you can only use it within that function.
+
+JavaScript let keyword
+The let keyword is an improved version of the var keyword. It is introduced in the ES6 or EcmaScript 2015. These variables has the block scope. It can’t be accessible outside the particular code block ({block}).
+The variable is only available inside the block {} where you define it.
+
+JavaScript const
+The const keyword has all the properties that are the same as the let keyword, except the user cannot update it and have to assign it with a value at the time of declaration. These variables also have the block scope. It is mainly used to create constant variables whose values can not be changed once they are initialized with a value.
+
+const is similar to let, but with one big difference: once you assign a value to a const variable, you can’t change it later. Like let, const is block-scoped.
+
+When to Use let and const
+var can be tricky because its scope is either global or within a function, which can lead to bugs. To avoid these issues:
+
+Use let when you know a variable’s value might change later in your code.
+Use const for variables that should never change once you set them.
