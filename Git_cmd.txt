@@ -1,0 +1,54 @@
+Clone fresh project
+
+git clone -b <branch> <URL>
+
+
+Branch List
+$ git branch
+
+Delete Branch
+$ git branch -d <branch Name>
+
+Create Branch
+git checkout -b <branch Name>
+
+Pull from dev
+$ git pull
+
+Switch
+$ git switch dev
+
+Pull from branch
+$ git pull origin <branch Name>
+
+Add file for commit
+$ git add .
+	
+
+List of files for push
+$ git diff --stat --cached origin/<branch Name>
+
+hat is about to be committed 
+git diff --cached
+
+Push branch
+git push -u origin <branch Name>
+
+chnaged file name-only
+git diff --name-only SHA1 SHA2
+ 
+
+Changed files between the last commit and the one before it
+git show --name-only
+
+
+
+vi editor
+
+Press i (i for insert)
+Write your merge message
+Press esc (escape)
+Write :wq (write & quit)
+Then press enter
+
+
