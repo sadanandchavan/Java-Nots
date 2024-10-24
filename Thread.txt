@@ -1,0 +1,29 @@
+
+Create execService for thread pool
+ExecutorService execService = Executors.newFixedThreadPool(Integer.parseInt(THREAD_COUNT));
+
+Threan created thread (worker thread) class by implemneting Runnable and implenment logic for run()
+
+start for loop{
+MyThread thread = new myThread(param1,param2);
+public class MyThread implements Runnable  {}
+
+execService.execute(thread);
+}end for loop
+
+execService.shutdown();
+
+while(!execService.isTerminated()){				
+	execService.awaitTermination(64000, TimeUnit.MILLISECONDS);
+}
+
+
+			
+based on records aviable for processing create thread count
+String THREAD_COUNT = "3";
+if count<5000 then THREAD_COUNT =2 if count<100 then THREAD_COUNT =1
+
+create connection pool same as thread count (create Vector calss object for thread safety and put all connection object in )
+
+
+ExecutorService execService = Executors.newFixedThreadPool(Integer.parseInt(THREAD_COUNT));		
