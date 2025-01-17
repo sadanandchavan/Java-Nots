@@ -9,3 +9,10 @@ docker pull mcr.microsoft.com/azure-sql-edge
 docker remove all container
 docker pull mcr.microsoft.com/azure-sql-edge
 
+run docker 
+docker run -e "ACCEPT_EULA=1" -e "MSSQL_SA_PASSWORD=PtmSP$8hm5j#911" -e "MSSQL_PID=Developer" 
+-e "MSSQL_USER=SA" -p 1433:1433 -d --name=sql mcr.microsoft.com/azure-sql-edge
+
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Pulsar#220#' -p 1433:1433 --name sql_server_container -d mcr.microsoft.com/mssql/server:2022-latest
+
+
