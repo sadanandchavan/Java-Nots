@@ -1,0 +1,5 @@
+Run every 20 sec
+@Scheduled(cron = "*/20 * * * * *")
+
+Run evry 10 min
+@Scheduled(cron = "0 */10 * * * *")
