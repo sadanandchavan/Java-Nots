@@ -1,0 +1,13 @@
+
+       List<String> items = Arrays.asList("Apple", "Banana", "Orange");
+        
+        // Use forEach to loop and call another method after every loop
+        items.forEach(item -> {
+            processItem(item); // Call another method after every loop iteration
+        });
+
+  // Method to process each item
+    public static void processItem(String item) {
+        System.out.println("Processing item: " + item);
+        // Other logic you want to execute after each loop
+    }
